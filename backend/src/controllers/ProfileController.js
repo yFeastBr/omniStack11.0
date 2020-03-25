@@ -1,4 +1,3 @@
-  
 const connection = require('../database/connection')
 
 module.exports = {
@@ -9,6 +8,6 @@ module.exports = {
     .where('ong_id', ong_id)
     .select('*');
 
-    return response.json(incidents)
+    return response.json(incidents);
   }
 }
